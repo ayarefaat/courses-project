@@ -1,0 +1,405 @@
+:root{
+    --main-color: #7971ea;
+    --main-hovered-color : #4f45e3
+ }
+ /* =====Global Styling====== */
+ *{
+     box-sizing: border-box
+ }
+ body {
+     font-family: "Muli" , sans-serif
+ }
+ .overlay{
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+     padding: 5px 0;
+ }
+ .main-btn{
+     background-color: var(--main-color);
+     color: #fff;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+     font-size: 13px;
+     transition: all ease 0.4s;
+     -webkit-transition: all ease 0.4s;
+     -moz-transition: all ease 0.4s;
+     -ms-transition: all ease 0.4s;
+     -o-transition: all ease 0.4s;
+ }
+ .main-btn:hover{
+     background-color: var(--main-hovered-color);
+     color: #fff
+ }
+ section{
+     padding: 30px 0
+ }
+ .main-color{
+     color: var(--main-color) !important ;
+ }
+ .main-bgcolor{
+     background-color:  var(--main-color) !important;
+     color: #fff !important;
+ }
+ .section-title{
+     text-align: center;
+     padding: 80px 0
+ }
+ .section-title h1{
+     font-weight: 900;
+     color: #111;
+     font-size: 3rem;
+     padding-bottom: 10px
+ }
+ .section-title p{
+     color: #888;
+     /* padding-bottom: 30px */
+ }
+ .img-holder{
+     overflow: hidden;
+ }
+ img{
+     width: 100%
+ }
+ .owl-nav{
+     display: flex;
+     justify-content: center;
+ }
+ .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+     background-color: var(--main-color) !important;
+     margin:  60px 5px !important;
+     padding: 10px 25px !important;
+     text-align: center !important;
+     font-size: 1.3rem !important;
+     display: inline-block !important;
+     color: #fff;
+     font-size: 1.2rem !important;
+     font-weight: 700;
+     border-radius: 10px;
+ }
+ ul{
+     list-style: none;
+ }
+ /*=====/Global Styling======= */
+ /* =======Nav-bar styling======== */
+ .navbar{
+     padding: 20px 0;
+     transition: all ease 0.4s;
+     -webkit-transition:;
+     -moz-transition:;
+     -ms-transition:;
+     -o-transition:;
+}
+ .navbar.navbar-fixed{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: #fff;
+     padding: 10px 0;
+     border-color: var(--main-color);
+     z-index: 1000;
+ }
+ .navbar.navbar-fixed .navbar-brand{
+     color: #333 !important
+ }
+ .navbar .navbar-brand{
+     font-weight: 900;
+     color: #fff !important
+ }
+ .navbar .navbar-nav li{
+     margin: 0 15px  ;
+ }
+ .navbar.navbar-fixed .navbar-nav li a.nav-link{
+     color: #333;
+ }
+ .navbar .navbar-nav li a.nav-link{
+     border-bottom: 2px solid transparent;
+     padding: 0 !important;
+     padding-bottom: 6px !important;
+     color : #fff
+ }
+ .navbar .navbar-nav li.active a.nav-link , .navbar .navbar-nav li:hover a.nav-link{
+     border-color: #fff  ;
+ }
+ .navbar.navbar-fixed .navbar-nav li.active a.nav-link , .navbar.navbar-fixed .navbar-nav li:hover a.nav-link {
+     border-color: var(--main-color)
+ }
+ /* ======= end Nav-bar styling======== */
+ /* ========start header ============*/
+ header{
+     background-image: url("image/img_2_big.jpg");
+     background-size: cover;
+     height: 100vh;
+     margin-top: -80px
+ }
+ header .logo {
+     margin: 250px 0;
+     text-align: center
+ }
+ header .logo h1{
+     color: #fff ;
+     font-size: 2.5rem;
+     font-weight: 800;
+     text-transform: capitalize;
+     margin-bottom: 30px
+ }
+ header .logo p{
+     color: #888
+ }
+ header .logo .icon{
+     font-size: 5px;
+     margin-top: -10px
+ }
+ header .logo p span{
+     color: #fff
+ }
+ /* ========start section course-desc======= */
+ .course-desc .section-title h1{
+     text-align: left;
+     text-transform: capitalize;
+     font-size: 2rem;
+ }
+ .course-desc .row .section-title p{
+     text-align: left;
+     font-size: 1.2rem
+ }
+ .course-desc .row .section-title p span{
+     color: #333;
+     text-transform: capitalize
+ }
+ .course-desc .row  p.main{
+     color: #888;
+     margin-top: -50px;
+     padding-bottom: 70px;
+     /* padding-left: 20px */
+ }
+ .course-desc .row  .details{
+     border: 1px solid rgb(224, 222, 222);
+     padding: 0 20px 15px;
+     text-align: center;
+     margin-top: 60px
+ }
+ .course-desc .row  .details .section-title{
+     padding: 30px 0
+ }
+ .course-desc .row  .details .section-title h3{
+     text-transform: uppercase;
+     border-bottom: 1px solid rgb(224, 222, 222);
+     font-size: 1.3rem;
+     padding-bottom: 15px;
+     font-weight: bold
+ } 
+ .course-desc .row  .details .chris .imggg img{
+     width: 90px;
+     border-radius: 50% ;
+     padding: 10px 0 25px 0
+}
+.course-desc .row  .details .chris h3{
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+.course-desc .row  .details .chris p{
+    color: #888
+} 
+.course-desc .study .pic{
+    padding-bottom: 35px
+}
+.course-desc .study .para p{
+    color: #888;
+    padding-bottom: 15px
+}
+.course-desc .study button{
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold
+    
+}
+ /* ========end section course-desc======= */
+ /* start section comments */
+#comments .section-title h2{
+    text-align: left;
+    color: #666;
+    /* padding-bottom: 0px */
+}
+#comments .deo1{
+    margin-bottom: 50px
+}
+#comments .deo1 .j img{
+    width: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} 
+#comments .deo1 .det{
+    padding-left: 130px;
+    margin-top: -80px
+}
+#comments .deo1 .det h4{
+    text-transform: capitalize;
+    color: #444;
+    margin-bottom: 10px
+}
+#comments .deo1 .det p.p1{
+    text-transform: uppercase;
+    color: #aaa;
+}
+#comments .deo1 .det .p1 span{
+    letter-spacing: 1px
+}
+#comments .deo1 .det p.p2{
+    color: #777
+}
+#comments .deo1 .det button{
+    text-transform: uppercase;
+    background-color: #ccc
+}
+#comments .deo2 {
+    padding-left: 70px
+}
+#comments .deo3 {
+    padding-left: 110px
+}
+#comments .deo4 {
+    padding-left: 150px;
+    padding-bottom: 90px
+}
+ /* end section comments */
+ /* start section leave */
+ #leave{
+     margin-bottom: 50px
+ }
+ #leave .section-title h2{
+     text-align: left;
+     color: #666
+ }
+ #leave .form{
+     background-color: #eee;
+     padding: 50px
+ }
+ #leave .form label{
+     color: #888
+ }
+ #leave .form button{
+     text-transform: uppercase;
+     border-radius: 10px ;
+    padding: 12px 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 13px
+}
+ /* end section leave */
+ #Courses{
+    background: linear-gradient( #444 55% , #fff 30%)
+}
+#Courses .section-title h1{
+    color: #fff
+}
+#Courses .courses-item .item {
+    background-color: #fff;
+    margin: 10px 0;
+    position: relative;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    color: gray;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), -1px 0px 4px rgba(0, 0, 0, 0.2)
+}
+#Courses .courses-item .item:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.2);
+}
+#Courses .courses-item .item .price span{
+    padding: 10px 13px;
+    margin-top: -20px
+} 
+#Courses .courses-item .item .main-info{
+    padding: 20px
+}
+#Courses .courses-item .item .main-info .weeks{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444
+}
+#Courses .courses-item .item .main-info .course-name h3{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 1.3rem
+}
+#Courses .courses-item .item .main-info .course-name p{
+    margin: 10px 0;
+    color: #888;
+}
+#Courses .courses-item .item .additional-info{
+    border-top: 1px solid #ccc;
+    display: flex
+}
+#Courses .courses-item .item .additional-info .users{
+    flex-basis: 70%;
+    padding: 15px
+}
+#Courses .courses-item .item .additional-info .messages{
+    flex-basis: 30%;
+    padding: 15px 20px;
+    border-left: 1px solid #ccc
+}
+/* ==========end section courses======== */
+footer{
+    background-color: #eee;
+    padding-top: 150px
+}
+footer .row{
+    margin-bottom: 70px
+}
+footer .row .item h6{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 25px
+}
+footer .row .item h6.center{
+    margin-left: 35px
+}
+footer .row .item p{
+    color: #888;
+    padding-right: 20px
+}
+footer .row .item ul li{
+    margin-bottom: 10px;
+}
+footer .row .item ul li a {
+    color: var(--main-color)
+}
+footer .row .item .form-group{
+    display: inline-block
+}
+footer .row .item .email{
+    width: 200px;
+}
+footer .row .item .main-btn{
+    border-radius: 0;
+    padding: 8px  20px!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: -5px;
+    margin-top: -3px
+}
+footer .rights{
+    text-align: center;
+    color: #888;
+    padding-bottom: 100px
+}
+/* =======end footer styling =============*/

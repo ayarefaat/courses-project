@@ -1,0 +1,476 @@
+:root{
+   --main-color: #7971ea;
+   --main-hovered-color : #4f45e3
+}
+/* =====Global Styling====== */
+*{
+    box-sizing: border-box
+}
+html{
+    font-size: 16px;
+}
+body {
+    font-family: "Muli" , sans-serif
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%
+}
+.main-btn{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 13px;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+}
+.main-btn:hover{
+    background-color: var(--main-hovered-color);
+    color: #fff
+}
+section{
+    padding: 30px 0
+}
+.main-color{
+    color: var(--main-color) !important ;
+}
+.main-bgcolor{
+    background-color:  var(--main-color) !important;
+    color: #fff !important;
+}
+.section-title{
+    text-align: center;
+    padding: 80px 0
+}
+.section-title h1{
+    font-weight: 900;
+    color: #111;
+    font-size: 3rem;
+    padding-bottom: 20px
+}
+.section-title p{
+    color: #888;
+    margin: 0 15%;
+    padding-bottom: 50px
+}
+.img-holder{
+    overflow: hidden;
+}
+img{
+    width: 100%
+}
+.owl-nav{
+    display: flex;
+    justify-content: center;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    background-color: var(--main-color) !important;
+    margin:  35px 5px !important;
+    padding: 10px 25px !important;
+    text-align: center !important;
+    font-size: 1.3rem !important;
+    display: inline-block !important;
+    color: #fff;
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+/*=====/Global Styling======= */
+/* =======Nav-bar styling======== */
+.navbar{
+    padding: 20px 0;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+}
+.navbar.navbar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    border-color: var(--main-color);
+    z-index: 1000;
+}
+.navbar.navbar-fixed .navbar-brand{
+    color: #333
+}
+.navbar .navbar-brand{
+    font-weight: 900;
+    color: #fff
+}
+.navbar .navbar-nav li{
+    margin: 0 15px  ;
+}
+.navbar.navbar-fixed .navbar-nav li a.nav-link{
+    color: #333;
+}
+.navbar .navbar-nav li a.nav-link{
+    border-bottom: 2px solid transparent;
+    padding: 0 !important;
+    padding-bottom: 6px !important;
+    color : #fff
+}
+.navbar .navbar-nav li.active a.nav-link , .navbar .navbar-nav li:hover a.nav-link{
+    border-color: #fff
+}
+.navbar.navbar-fixed .navbar-nav li.active a.nav-link , .navbar.navbar-fixed .navbar-nav li:hover a.nav-link {
+    border-color: var(--main-color)
+}
+/* ======= end Nav-bar styling======== */
+/*======= start header styling ========*/
+header{
+    background-image: url('image/header-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin-top: -80px
+}
+.header-content .row .col-md-6 .info h1{
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+header .row .col-md-6 {
+    padding: 35vh 0
+}
+header .row .col-md-5{
+    margin: 30vh 0
+}
+.header-content .row .col-md-6 .info p{
+    color: #888;
+}
+.header-content .row .col-md-6 .info a{
+    padding: 10px 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px
+}
+header .row .col-md-5 .form-data{
+    background-color: #fff;
+    padding: 40px 35px !important;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+header .row .col-md-5 .form-data h4{
+    margin-bottom: 20px
+}
+header .row .col-md-5 .form-data form input:not([type='submit']){
+    padding: 20px 10px
+}
+header .row .col-md-5 .form-data form input[type='submit']{
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 11px
+}
+/* =======end header styling========= */
+/* ==========start section courses======== */
+#Courses{
+    background: linear-gradient(var(--main-color) 55% , #fff 30%)
+}
+#Courses .section-title h1{
+    color: #fff
+}
+#Courses .courses-item .item {
+    background-color: #fff;
+    margin: 10px 0;
+    position: relative;
+    transition: all ease 0.4s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+    color: gray;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), -1px 0px 4px rgba(0, 0, 0, 0.2);
+}
+#Courses .courses-item .item:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.2);
+}
+#Courses .courses-item .item .price span{
+    padding: 10px 13px;
+    margin-top: -20px
+} 
+#Courses .courses-item .item .main-info{
+    padding: 20px
+}
+#Courses .courses-item .item .main-info .weeks{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444
+}
+#Courses .courses-item .item .main-info .course-name h3{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 1.3rem
+}
+#Courses .courses-item .item .main-info .course-name p{
+    margin: 10px 0;
+    color: #888;
+}
+#Courses .courses-item .item .additional-info{
+    border-top: 1px solid #ccc;
+    display: flex
+}
+#Courses .courses-item .item .additional-info .users{
+    flex-basis: 70%;
+    padding: 15px
+}
+#Courses .courses-item .item .additional-info .messages{
+    flex-basis: 30%;
+    padding: 15px 20px;
+    border-left: 1px solid #ccc
+}
+/* ==========end section courses======== */
+/* ========Start section Programs====== */
+#Programs .row{
+    margin-bottom: 50px
+}
+#Programs .section-content .content{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+#Programs .section-content .content h1{
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: 20px
+}
+#Programs .section-content .content p{
+    color: #888;
+    margin-bottom: 20px
+}
+#Programs .section-content .content .info{
+    margin-bottom: 15px
+}
+#Programs .section-content .content .info .icon{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+#Programs .section-content .content .info span:last-child{
+    color: var(--main-color);
+    font-weight: bold;
+    margin-left: 15px
+}
+/* ========end section Programs====== */
+/*========== start section Teachers======== */
+#Teachers .row .information {
+    margin: 0 15px;
+    text-align: center
+}
+#Teachers .row .information .img img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 250px;
+}
+#Teachers .row .information .desc{
+    border : 1px solid rgb(216, 213, 213);
+    margin-top: -100px;
+    padding: 5px 35px;
+}
+#Teachers .row .information .desc h4{
+    padding-top: 90px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.3rem
+}
+#Teachers .row .information .desc h5{
+    color: #aaa;
+    margin-bottom: 25px
+} 
+#Teachers .row .information .desc p{
+    color: #888
+}
+/*========== end section Teachers======== */
+/* ==========Start section choose======== */
+#choose {
+    background-image: url('image/hero_1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 0 ;
+    margin-top: 30px ;
+    height: 100vh
+}
+#choose .picture .jero img{
+    width: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 20px;
+    padding-top: 120px
+}
+#choose .data h4{
+    color: #fff;
+    margin-bottom: 30px
+}
+#choose .data p{
+    color: #fff;
+    font-style: italic;
+    padding: 0 20%;
+    padding-bottom: 40px
+}
+/* ==========end section choose======== */
+/* ==========start section why======= */
+#why{
+    padding-bottom: 270px;
+    overflow: hidden;
+}
+#why .row{
+    position: relative;
+    
+}
+#why .row .tags{
+    background-color: #fff;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    /* position: relative; */
+    z-index: 100;
+   
+}
+#why .row::after{
+    content: url('image/blob_2.svg');
+    position: absolute;
+    top: 40%;
+    left: -25%;
+    z-index: -1
+}
+#why .row .tags ul li{
+    margin: 20px ;
+}
+#why .row .tags ul li span.icon{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px
+}
+#why .row .person{
+    position: relative;
+}
+#why .row .person::before{
+    content: url('image/blob_1.svg');
+    position: absolute;
+    top: -45%;
+    right: -60%
+
+}
+/* ==========end section why======= */
+/* start section message */
+#message{
+    background-color: rgb(241, 238, 238);
+    margin-bottom: 70px
+}
+#message .section-title{
+    margin-left: 60px;
+    text-align: left
+}
+#message .section-title h1{
+    margin-left: 150px
+}
+#message .section-title p{
+    padding-bottom: 0;
+    margin-top: -10px
+}
+#message form{
+    margin: 0 20%
+}
+#message form .name{
+    width: 330px;
+    padding: 23px !important;
+    margin-right: 10px !important
+}
+#message form .subject , #message form .email {
+    padding: 23px
+}
+#message form #exampleFormControlTextarea1{
+    padding-bottom: 150px;
+    margin-bottom: 10px
+}
+#message form button[type="submit"]{
+    padding: 12px 80px !important;
+    font-weight: bold;
+    text-transform: uppercase
+}
+/* end section message */
+/*========= start footer styling ========*/
+footer .row{
+    margin-bottom: 70px
+}
+footer .row .item h6{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 25px
+}
+footer .row .item h6.center{
+    margin-left: 35px
+}
+footer .row .item p{
+    color: #888;
+    padding-right: 20px
+}
+footer .row .item ul li{
+    margin-bottom: 10px;
+}
+footer .row .item ul li a {
+    color: var(--main-color)
+}
+footer .row .item .form-group{
+    display: inline-block
+}
+footer .row .item .email{
+    width: 200px;
+}
+footer .row .item .main-btn{
+    border-radius: 0;
+    padding: 8px  20px!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: -5px;
+    margin-top: -3px
+}
+footer .rights{
+    text-align: center;
+    color: #888;
+    margin-bottom: 100px
+}
+/* =======end footer styling =============*/
